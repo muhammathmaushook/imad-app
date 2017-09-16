@@ -5,9 +5,6 @@ body {
     margin-top: 75px;
 }
 
-.center {
-    text-align: center;
-}
 
 .text-big {
     font-size: 300%;
@@ -26,5 +23,6 @@ body {
 .container{
     max-width:800px;
     color:#04frth;
+    text-align: center;
 }  
 
