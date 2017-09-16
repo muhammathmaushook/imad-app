@@ -4,18 +4,7 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var content= {
-    title:'Article one | Muhammath Maushook',
-    heading:' Article One',
-    date: '15/9/2017',
-    content: " <p> Nulla ut fermentum risus. Curabitur sed odio fringilla mauris mollis finibus. Proin vel lacus elit. Phasellus tempor nisl eget ligula bibendum, ut cursus neque mollis. Duis vel risus nec odio rutrum rutrum at vitae risus. Ut posuere luctus luctus. Vestibulum massa metus, accumsan in nisl et, rutrum feugiat odio. Aliquam.
-          </p>
-          <p> Nulla ut fermentum risus. Curabitur sed odio fringilla mauris mollis finibus. Proin vel lacus elit. Phasellus tempor nisl eget ligula bibendum, ut cursus neque mollis. Duis vel risus nec odio rutrum rutrum at vitae risus. Ut posuere luctus luctus. Vestibulum massa metus, accumsan in nisl et, rutrum feugiat odio. Aliquam.
-          </p>
-          <p> Nulla ut fermentum risus. Curabitur sed odio fringilla mauris mollis finibus. Proin vel lacus elit. Phasellus tempor nisl eget ligula bibendum, ut cursus neque mollis. Duis vel risus nec odio rutrum rutrum at vitae risus. Ut posuere luctus luctus. Vestibulum massa metus, accumsan in nisl et, rutrum feugiat odio. Aliquam.
-          </p>
-        <p> Nulla ut fermentum risus. Curabitur sed odio fringilla mauris mollis finibus. Proin vel lacus elit. Phasellus tempor nisl eget ligula bibendum, ut cursus neque mollis. Duis vel risus nec odio rutrum rutrum at vitae risus. Ut posuere luctus luctus. Vestibulum massa metus, accumsan in nisl et, rutrum feugiat odio. Aliquam.</p> "
-};
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
