@@ -1,4 +1,4 @@
 console.log('Loaded!');
 alert('This is second script');
-var element = documet.getelementById('free');
+var element = documet.getElementById('free');
 element.innerHTML='Nothing';
