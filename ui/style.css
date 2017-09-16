@@ -23,4 +23,8 @@ body {
     height: 100%;
     
 }
+.container{
+    max-width:800px;
+    color:#04frth;
+}  
 
