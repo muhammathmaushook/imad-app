@@ -4,5 +4,5 @@ var element = document.getElementById('free');
 element.innerHTML='Nothing';
 var img =  document.getElementById('imge');
 img.onclick= function () {
-  img.style.marginleft= '2604px';
+  img.style.marginleft = '2604px';
 };
