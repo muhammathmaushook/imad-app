@@ -3,6 +3,7 @@ body {
     background-color:#ffffff;
     background-size: 100%;
     margin-top: 75px;
+    text-align: center;
 }
 
 
@@ -22,7 +23,6 @@ body {
 }
 .container{
     color:#04frth;
-    text-align: center;
     margin-left: 100px;
     margin-right: 100px;
     text-align:justify;
