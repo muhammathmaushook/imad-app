@@ -5,8 +5,8 @@ body {
     background-size: 100%;
     margin-top: 75px;
     text-align: center;
-    margin-left:20px;
-    margin-right:20px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 
@@ -26,8 +26,7 @@ body {
 }
 .container{
     color:#04frth;
-    margin-left: 100px;
-    margin-right: 100px;
+    
     text-align:center;
 }
 .container text
