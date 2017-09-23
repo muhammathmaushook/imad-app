@@ -10,24 +10,27 @@ var content = {
     Heading : 'Arycle one',
     Content: " <p> Nulla ut fermentum risus. Curabitur sed odio fringilla mauris mollis finibus. Proin vel lacus elit. Phasellus tempor nisl eget ligula bibendum, ut cursus neque mollis. Duis vel risus nec odio rutrum rutrum at vitae risus. Ut posuere luctus luctus. Vestibulum massa metus, accumsan in nisl et, rutrum feugiat odio. Aliquam </p>   <p> Nulla ut fermentum risus. Curabitur sed odio fringilla mauris mollis finibus. Proin vel lacus elit. Phasellus tempor nisl eget ligula bibendum, ut cursus neque mollis. Duis vel risus nec odio rutrum rutrum at vitae risus. Ut posuere luctus luctus. Vestibulum massa metus, accumsan in nisl et, rutrum feugiat odio. Aliquam </p>    <p> Nulla ut fermentum risus. Curabitur sed odio fringilla mauris mollis finibus. Proin vel lacus elit. Phasellus tempor nisl eget ligula bibendum, ut cursus neque mollis. Duis vel risus nec odio rutrum rutrum at vitae risus. Ut posuere luctus luctus. Vestibulum massa metus, accumsan in nisl et, rutrum feugiat odio. Aliquam.</p> <p> Nulla ut fermentum risus. Curabitur sed odio fringilla mauris mollis finibus. Proin vel lacus elit. Phasellus tempor nisl eget ligula bibendum, ut cursus neque mollis. Duis vel risus nec odio rutrum rutrum at vitae risus. Ut posuere luctus luctus. Vestibulum massa metus, accumsan in nisl et, rutrum feugiat odio. Aliquam.</p> ",
 };
-var html = 
+var htmlTemplete = 
     "
 <html>
-<head><title> ${title}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href=ui/style.css>
-</head>
+ <head>
+      <title> ${title}
+      </title>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href=ui/style.css>
+ </head>
 <body>
-  <div class="Container" id="contain">  <div>  <a href="/" >home</a></div>
+  <div class="Container" id="contain">  
+      <div>  <a href="/" >home</a></div>
   
     <hr><h3>${heading}</h3><div>${date}</div>
    <div>
      ${content}
-     </div> </div>
+     </div> 
+ </div>
     
-</body></html>
-
-" ;
+</body>
+</html>" ;
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
